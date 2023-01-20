@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(80, 88, 88);
+}
+.btn {
+    position: absolute;
+    top: 94%;
+    left: 150%
+    transform translate(-90, 150);
+}
+.btn2 {
+    position: absolute;
+    top: 94%;
+    left: 6%;
+    right: 10%
+    transform translate(-90, 150);
+}
+.img {
+    position: absolute;
+    top: 94%;
+    left: 97%;
+    right: 10%
+    transform translate(-90, 150);
+}
+a:visited { 
+    text-decoration: none; 
+    color: lightblue; 
+}
