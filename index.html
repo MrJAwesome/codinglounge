@@ -1,0 +1,99 @@
+<html>  
+    <head>
+        <title>Discord Coding Lounge</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="images/x-icon" href="https://images-ext-1.discordapp.net/external/jgT0rbtvxgXsi_-I0nYTpQFRIZUoniaG4rL0_1qZYlQ/%3Fquality%3Dlossless/https/cdn.discordapp.com/emojis/791239903945162782.png" />
+    </head>
+    <body>
+        <center>
+            <h1><font color="#FFFFFF" size="15">The Discord Coding Lounge  <img src="https://images-ext-1.discordapp.net/external/2GyQDCViHAFYfzX4Kbv62rbSD0b1QDdX9wvbqM2DkRA/https/cdn.discordapp.com/icons/970775928596746290/a_d5eb6c4cc256a123afd4a518d62c8960.gif" width="35" height="35"></font></h1>
+
+            <p>
+            <font color="#FFFFFF" size="5">The Discord Coding Lounge is a place for discord bot developers to develop bots, learn programming languages, and meet other programmers! Jackson, the owner of the server makes YouTube videos showing how to create discord bots using the Discord.js programming language, and how to create commands!</font>
+            </p>
+
+            <p>
+                <font color="#FFFFFF">
+                <marquee></marquee>
+                <marquee direction="right" 
+                    behavior="alternate">
+                    discord.gg/codinglounge
+                </marquee>
+                </font>
+            </p>
+
+            <form>
+                <font color="#FFFFFF">
+                    <h2>Whats new?!</h2>
+                    <p style="line-height: 150%">
+                        Take a look at everything thats happening within the Discord Coding Lounge Community!
+                    </p>
+                </font>
+                <p>
+                    <font color="#FFFFFF" size="5" style="line-height: 150%">🛑 We are accepting CODING HELPER APPLICATIONS at this time! Click <a href="form.html">here</a> to apply now!</font>
+                </p>
+            </form>
+
+
+        </center>
+
+        <center>
+                <div class="box">
+                    <div class="btn">  
+                        <button onclick="youtube()" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-radius:5px; height: 50px; width: 100px; font-size: medium; font-weight: bold;">YouTube</button> 
+                        <button onclick="discord()" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-radius:5px; height: 50px; width: 100px; font-size: medium; font-weight: bold;">Discord</button>
+                    </div>
+                </div>
+        </center>
+
+        <script>
+            //Discord Button Function
+            async function discord() {
+                let input = window.confirm(`Are you sure you want to go to discord.gg/codinglounge?`);
+                
+                if (input == true) {
+                   window.location.href = 'https://discord.gg/codinglounge';
+                   return;
+                } else if (input == false) {
+                    return;
+                }
+            }
+
+            //YouTube Button Function
+            async function youtube() {
+                let input = window.confirm(`Are you sure you want to go to youtube.com/c/@MrJAwesomeYT?`);
+                
+                if (input == true) {
+                   window.location.href = 'https://youtube.com/c/@MrJAwesomeYT';
+                   return;
+                } else if (input == false) {
+                    return;
+                }
+            }
+
+            //prompt hyperlink
+            async function link() {
+                let input;
+
+                while (!input) {
+                    input = window.prompt('Your message for the developers');
+
+                    if (input == null) {
+                        break;
+                    }
+
+                    console.log(`Developer message: ${input}`)
+                }
+            }
+
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener('beforeunload', function (f) {
+                f.preventDefault();
+                f.returnValue = '';
+            });
+        </script>
+
+    </body>
+</html>

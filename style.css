@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap');
+
+body {
+    background-color: rgb(80, 88, 88);
+    font-family: 'Inter';
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    display: flexbox;
+    cursor:grab;
+}
+.img {
+    width: 100%;
+    padding: 10px;
+}
+a:visited { 
+    text-decoration: none; 
+    color: lightblue; 
+}
+
+form {
+    background: rgb(112, 112, 112);
+    padding: 60px;
+    width: 550px;
+    max-width: calc(100% - 60px);
+}
+
+
+
+
