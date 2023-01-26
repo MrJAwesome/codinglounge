@@ -1,0 +1,111 @@
+<html>  
+    <head>
+        <title>Discord Coding Lounge</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="images/x-icon" href="https://images-ext-1.discordapp.net/external/jgT0rbtvxgXsi_-I0nYTpQFRIZUoniaG4rL0_1qZYlQ/%3Fquality%3Dlossless/https/cdn.discordapp.com/emojis/791239903945162782.png" />
+    </head>
+    <body>
+
+        <nav>
+            <div class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Applications</a></li>
+                <li><a href="apps.html">Application Guide</a></li>
+
+            </div>
+        </nav>
+
+        <center>
+            <div class="head">
+                <h1>We'll Help You With Your Programming Journey.</h1>
+            </div>
+
+            <img src="file:///C:/Users/freyj/OneDrive/Desktop/Coding_Lounge_Website/Sources/Program.png">
+
+            <div class="bod">
+                <p>
+                    We are here to help you with your programming journey.  Developing discord bots is simple & easy when you have help from our amazing staff members.  The Discord Coding Lounge has coding help channels, giveaways, a discord coding community, and YouTube videos posted every other day with tutorials on how to make discord bots!
+                </p>
+
+                <h2>Whats new!?</h2>
+                <p>
+                    📰 We are currently accepting CODING HELPER applications at this time! Click <a style="color: rgb(163, 163, 255)" href="form.html">here</a> to apply today!  Before applying, we recommend reading <a style="color: rgb(163, 163, 255)" href="apps.html">the application guide</a> so you fully understand everything.
+                </p>
+                <p>
+                    📰 Want a custom coded discord bot? Click <a style="color: rgb(163, 163, 255)" href="https://www.youtube.com/channel/UC3JG-y_RtMszRFkdxUrrEEQ/join">here</a> and purchase the Custom Bot Tier!  Then you provide us more information on your bot in the discord.
+                </p>
+            </div>
+
+
+        </center>
+
+        <div class="moving">
+            <marquee></marquee>
+            <marquee direction="right" 
+                behavior="alternate">
+                discord.gg/codinglounge
+            </marquee>
+        </div>
+
+        <center>
+            <div class="box">
+                <div class="btn">  
+                    <button onclick="youtube()">YouTube</button> 
+                    <button onclick="discord()">Discord</button>
+                </div>
+            </div>
+        </center>
+
+        <div class="footer">
+            <center>
+                <footer>
+                    © Discord Coding Lounge 2023
+                </footer>
+            </center>
+        </div>
+
+
+        <script>
+            //Discord Button Function
+            async function discord() {
+                let input = window.confirm(`Are you sure you want to go to discord.gg/codinglounge?`);
+                
+                if (input == true) {
+                   window.location.href = 'https://discord.gg/codinglounge';
+                   return;
+                } else if (input == false) {
+                    return;
+                }
+            }
+
+            //YouTube Button Function
+            async function youtube() {
+                let input = window.confirm(`Are you sure you want to go to youtube.com/c/@MrJAwesomeYT?`);
+                
+                if (input == true) {
+                   window.location.href = 'https://youtube.com/c/@MrJAwesomeYT';
+                   return;
+                } else if (input == false) {
+                    return;
+                }
+            }
+
+            //prompt hyperlink
+            async function link() {
+                let input;
+
+                while (!input) {
+                    input = window.prompt('Your message for the developers');
+
+                    if (input == null) {
+                        break;
+                    }
+
+                    console.log(`Developer message: ${input}`)
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
