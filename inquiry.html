@@ -1,0 +1,105 @@
+<html>  
+    <head>
+        <title>Discord Coding Lounge</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="icon" type="images/x-icon" href="https://images-ext-1.discordapp.net/external/jgT0rbtvxgXsi_-I0nYTpQFRIZUoniaG4rL0_1qZYlQ/%3Fquality%3Dlossless/https/cdn.discordapp.com/emojis/791239903945162782.png" />
+    </head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-934HL5SHXQ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-934HL5SHXQ');
+        </script>
+
+    <body>
+
+        <nav>
+            <div class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="form.html">Applications</a></li>
+                <li><a href="apps.html">Application Guide</a></li>
+            </div>
+        </nav>
+
+        <center>
+            <div class="head">
+
+            </div>
+
+            <div class="bod">
+            </div>
+        </center>
+
+        <form action="https://sheetdb.io/api/v1/0kdb0un576g7j" method="post" id="sheetdb-form">
+            <h1>Custom Bot Inquiry Form</h1>   
+            <p>
+                If you purchased the custom bot membership tier, fill out this form so we can better understand what you need for your custom bot.  If you did not actually buy this tier and you fill out this form, your inquiry will be removed.
+            </p>
+                <div class="form-element">
+                    <span>Email adress</span>
+                    <input type="email" name="email" placeholder="Your Email" required="true">  
+                </div>
+                <div class="form-element">
+                    <span>Discord Tag</span>
+                    <input type="text" name="tag" placeholder="Your Discord Tag" required="true">
+                </div>
+                <div class="form-element">
+                    <span>YouTube Username</span>
+                    <input type="text" name="youtube" placeholder="Your youtube username" required="true">
+                </div>
+                <div class="form-element">
+                    <span>Breif Description</span>
+                    <input type="text" name="breif" placeholder="A breif description of what you want the bot to do" required="true"></input>
+                </div>
+                <div class="form-element">
+                    <span>Detailed Description</span>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please provide a very detailed description of EXACTLY what you want the bot to do." required="true"></textarea>
+                </div>
+                <div class="form-element">
+                    <span>Example Attachments</span>
+                    <input type="file" id="upload" name="upload"></input>
+                </div>
+                    <button>Submit</button>
+               </form>
+
+        <center>
+            <div class="box">
+                <div class="btn">  
+
+                </div>
+            </div>
+        </center>
+
+
+        <div class="footer">
+            <center>
+                <footer>
+                    © Discord Coding Lounge 2023
+                </footer>
+            </center>
+        </div>
+
+
+        <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener("submit", e => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method : "post",
+                    body: new FormData(document.getElementById("sheetdb-form")),
+                }).then(
+                    response => response.json()
+                ).then((html) => {
+                    window.location.replace("inquirysub.html") 
+                })
+            })
+        </script>
+
+    </body>
+</html>
